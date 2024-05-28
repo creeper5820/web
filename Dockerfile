@@ -9,9 +9,7 @@ RUN apt-get install -y \
     vim sudo zsh
 
 # install oh my zsh & change theme to af-magic
-RUN wget https://gitee.com/mirrors/oh-my-zsh/raw/master/tools/install.sh -O zsh-install.sh && \
-    chmod +x ./zsh-install.sh && \
-    ./zsh-install.sh && \
+RUN sh -c "$(wget https://gitee.com/Devkings/oh_my_zsh_install/raw/master/install.sh -O -)" && \
     sed -i 's/ZSH_THEME=\"[a-z0-9\-]*\"/ZSH_THEME="af-magic"/g' ~/.zshrc &&\
     chsh -s /bin/zsh
 
