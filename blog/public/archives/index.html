@@ -429,18 +429,66 @@
             
         
         <article class="index-post">
-            <a class="abstract-title" href="/creeper/2024/05/13/debug-ros2-with-foxglove/">
+            <a class="abstract-title" href="/creeper/2024/06/08/ubuntu-installation/">
                 
-                <span class="abstract-title-text">替代Rviz的Foxglove可视化及调参平台</span>
+                <span class="abstract-title-text">如何安稳地安装ubuntu系统</span>
             </a>
             <div class="abstract-content">
-                
+                前言ubuntu一直对驱动安装不是很友好，特别是一些比较老的版本，每次安装Nvidia驱动都是一场豪赌，顺利安装，或是重装系统。
+有一段时间，我几乎是把能够下载到的所有版本的linux发行版试了个遍（Redmi G 2021 骁龙版），最终发现最为稳定的版本是最新的ubuntu 24.04
+对于开发，我需要在ubuntu上运行ros2系统，编写C/Cpp程序，开发嵌入式，ros2的版本是和ubuntu版本强耦合的，但使用docker可以较为完美的解决这个问题，所以使用ubuntu 24.04对我的开发需求是没有什么阻碍的
+准备工作制作Ventoy启动盘Ventoy是比较优雅的多系统装机方...
             </div>
             <!-- read more -->
             
             <div class="abstract-post-meta">
                 <!-- date -->
-                <div class="abstract-date" title="Last updated: 2024/05/15">
+                <div class="abstract-date" title="Last updated: 2024/06/08">
+                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2024/06/08</span>
+                </div>
+                <!-- tags -->
+                
+                    <div class= abstract-tags >
+    
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="ubuntu">ubuntu</a>
+    
+</div>
+
+                
+            </div>
+        </article>
+        <div class="index-post-divider"></div>
+    
+        
+        
+        
+        
+            
+        
+        <article class="index-post">
+            <a class="abstract-title" href="/creeper/2024/05/13/debug-ros2-with-foxglove/">
+                
+                <span class="abstract-title-text">替代Rviz的Foxglove可视化及调参平台</span>
+            </a>
+            <div class="abstract-content">
+                准备工作
+在NUC环境中下载Foxglove Bridge，此为文档连接，在Linux环境中使用下面指令下载
+1sudo apt install ros-$ROS_DISTRO-foxglove-bridge
+
+在调试用电脑中下载Foxglove Studio，此为下载链接，亦可使用Webview，注意，Webview 在消息负载较大时会卡顿崩溃
+
+与 NUC 构建网络连接，可以通过Wifi或者网线使调试电脑和 NUC 在同一局域网段，不推荐使用 Wifi 进行调试，卡顿是常有的事
+
+
+启动 Foxglove Bridge在你的车载 NUC 中进行
+12# terminal in nuc...
+            </div>
+            <!-- read more -->
+            
+            <div class="abstract-post-meta">
+                <!-- date -->
+                <div class="abstract-date" title="Last updated: 2024/05/28">
                     <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2024/05/13</span>
                 </div>
                 <!-- tags -->
@@ -481,7 +529,7 @@
             
             <div class="abstract-post-meta">
                 <!-- date -->
-                <div class="abstract-date" title="Last updated: 2024/05/15">
+                <div class="abstract-date" title="Last updated: 2024/05/28">
                     <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2024/05/13</span>
                 </div>
                 <!-- tags -->
@@ -524,7 +572,7 @@
             
             <div class="abstract-post-meta">
                 <!-- date -->
-                <div class="abstract-date" title="Last updated: 2024/05/15">
+                <div class="abstract-date" title="Last updated: 2024/05/28">
                     <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2024/05/13</span>
                 </div>
                 <!-- tags -->
@@ -573,7 +621,7 @@ STM32CubeMX的使用
             
             <div class="abstract-post-meta">
                 <!-- date -->
-                <div class="abstract-date" title="Last updated: 2024/05/15">
+                <div class="abstract-date" title="Last updated: 2024/05/28">
                     <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2024/05/12</span>
                 </div>
                 <!-- tags -->
@@ -714,7 +762,16 @@ STM32CubeMX的使用
         
         
         
+        
+        
+        
+        
+        
     
+        
+        
+        
+        
         
         
         
@@ -733,7 +790,7 @@ STM32CubeMX的使用
     
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 4
+        Total : 5
         </div>
         <!-- search  -->
         
@@ -747,6 +804,12 @@ STM32CubeMX的使用
             <div class="archive-year"> 2024 </div>
             <ul class="year-list">
             
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">06/08</span>
+            <a class="archive-post-title" href="/creeper/2024/06/08/ubuntu-installation/">如何安稳地安装ubuntu系统</a>
+        </li>
+    
         
         <li class="archive-post-item">
             <span class="archive-post-date">05/13</span>

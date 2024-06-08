@@ -21,7 +21,7 @@
     <meta name="description" content="">
     <meta property="og:type" content="website">
 <meta property="og:title" content="Creeper5820">
-<meta property="og:url" content="http://47.122.22.22/creeper/archives/2024/05/index.html">
+<meta property="og:url" content="http://47.122.22.22/creeper/archives/2024/06/index.html">
 <meta property="og:site_name" content="Creeper5820">
 <meta property="og:locale">
 <meta property="article:author" content="creeper5820">
@@ -429,70 +429,22 @@
             
         
         <article class="index-post">
-            <a class="abstract-title" href="/creeper/2024/05/13/debug-ros2-with-foxglove/">
+            <a class="abstract-title" href="/creeper/2024/06/08/ubuntu-installation/">
                 
-                <span class="abstract-title-text">替代Rviz的Foxglove可视化及调参平台</span>
+                <span class="abstract-title-text">如何安稳地安装ubuntu系统</span>
             </a>
             <div class="abstract-content">
-                准备工作
-在NUC环境中下载Foxglove Bridge，此为文档连接，在Linux环境中使用下面指令下载
-1sudo apt install ros-$ROS_DISTRO-foxglove-bridge
-
-在调试用电脑中下载Foxglove Studio，此为下载链接，亦可使用Webview，注意，Webview 在消息负载较大时会卡顿崩溃
-
-与 NUC 构建网络连接，可以通过Wifi或者网线使调试电脑和 NUC 在同一局域网段，不推荐使用 Wifi 进行调试，卡顿是常有的事
-
-
-启动 Foxglove Bridge在你的车载 NUC 中进行
-12# terminal in nuc...
+                前言ubuntu一直对驱动安装不是很友好，特别是一些比较老的版本，每次安装Nvidia驱动都是一场豪赌，顺利安装，或是重装系统。
+有一段时间，我几乎是把能够下载到的所有版本的linux发行版试了个遍（Redmi G 2021 骁龙版），最终发现最为稳定的版本是最新的ubuntu 24.04
+对于开发，我需要在ubuntu上运行ros2系统，编写C/Cpp程序，开发嵌入式，ros2的版本是和ubuntu版本强耦合的，但使用docker可以较为完美的解决这个问题，所以使用ubuntu 24.04对我的开发需求是没有什么阻碍的
+准备工作制作Ventoy启动盘Ventoy是比较优雅的多系统装机方...
             </div>
             <!-- read more -->
             
             <div class="abstract-post-meta">
                 <!-- date -->
-                <div class="abstract-date" title="Last updated: 2024/05/28">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2024/05/13</span>
-                </div>
-                <!-- tags -->
-                
-                    <div class= abstract-tags >
-    
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="ros2">ros2</a>
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="foxglove">foxglove</a>
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="c/cpp">c/cpp</a>
-    
-</div>
-
-                
-            </div>
-        </article>
-        <div class="index-post-divider"></div>
-    
-        
-        
-        
-        
-            
-        
-        <article class="index-post">
-            <a class="abstract-title" href="/creeper/2024/05/13/server-based-on-frp-and-nginx/">
-                
-                <span class="abstract-title-text">经济与体验的权衡，使用云服务器和Frp的本地服务穿透方案</span>
-            </a>
-            <div class="abstract-content">
-                起因我想大学生都是需要一个服务器的，既然有了服务器，那域名也是必不可少的，奈何云服务器资源昂贵，性能普遍不如本地设备
-正好之前购买的腾讯云学生优惠服务器即将到期，（反复提醒了我几十遍资源马上要释放了，宛若催命），便想着找出一个解决方案，兼顾云服务器的公网IP资源和本地服务器的性能，几番思索，最终决定使用Frp搭桥，穿透网络端口，搞台NUC作为本地服务器平台
-本地平台系统准备Ubuntu Server安装网络连接Docker配置云服务器系统准备Ubuntu Server安装基础软件安装设置流量监控设置安全组，保证网络安全Vscode 工作流远程连接云服务器和本地设备常用使用方法架设Frp服...
-            </div>
-            <!-- read more -->
-            
-            <div class="abstract-post-meta">
-                <!-- date -->
-                <div class="abstract-date" title="Last updated: 2024/05/28">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2024/05/13</span>
+                <div class="abstract-date" title="Last updated: 2024/06/08">
+                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2024/06/08</span>
                 </div>
                 <!-- tags -->
                 
@@ -500,102 +452,6 @@
     
     
         <a class="post-tag" href="javascript:void(0);" data-tags="ubuntu">ubuntu</a>
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="server">server</a>
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="nginx">nginx</a>
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="frp">frp</a>
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="web">web</a>
-    
-</div>
-
-                
-            </div>
-        </article>
-        <div class="index-post-divider"></div>
-    
-        
-        
-        
-        
-            
-        
-        <article class="index-post">
-            <a class="abstract-title" href="/creeper/2024/05/13/about-ubuntu-server-network/">
-                
-                <span class="abstract-title-text">Ubuntu Server网络设置</span>
-            </a>
-            <div class="abstract-content">
-                
-            </div>
-            <!-- read more -->
-            
-            <div class="abstract-post-meta">
-                <!-- date -->
-                <div class="abstract-date" title="Last updated: 2024/05/28">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2024/05/13</span>
-                </div>
-                <!-- tags -->
-                
-                    <div class= abstract-tags >
-    
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="ubuntu">ubuntu</a>
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="server">server</a>
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="netplan">netplan</a>
-    
-</div>
-
-                
-            </div>
-        </article>
-        <div class="index-post-divider"></div>
-    
-        
-        
-        
-        
-            
-        
-        <article class="index-post">
-            <a class="abstract-title" href="/creeper/2024/05/12/can-tutorial/">
-                
-                <span class="abstract-title-text">简明CAN通讯驱动M2006电机指引</span>
-            </a>
-            <div class="abstract-content">
-                引子现在是2024年1月18号晚上零点半，电路工数等困难科目已经考完，只是剩一门马原
-临近寒假的这一段时间颇为闲暇，于是在工作室寻得一些 M2006无刷电机和 C610电调 ，加上手头上的 C板，试着组一台个人未来比赛用的四驱底盘
-依据大疆资料来看，电调需要使用CAN通信来控制，正中知识盲区，于是放下手中的马原教材（其实根本没有拿起来过），学习一下CAN
-环境准备前置知识
-STM32CubeMX的使用
-一定的C语言使用经验
-
-软件环境
-代码生成 STM32CubeMX （以HAL库为基础）
-编译工具 arm-none-eabi工具链（使用其他编译器亦可）
-编写环境 VSCode+Embe...
-            </div>
-            <!-- read more -->
-            
-            <div class="abstract-post-meta">
-                <!-- date -->
-                <div class="abstract-date" title="Last updated: 2024/05/28">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2024/05/12</span>
-                </div>
-                <!-- tags -->
-                
-                    <div class= abstract-tags >
-    
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="c/cpp">c/cpp</a>
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="embedded">embedded</a>
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="can">can</a>
     
 </div>
 
